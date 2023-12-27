@@ -1,0 +1,22 @@
+{
+  "name": "node-js-crash-course",
+  "version": "1.0.0",
+  "description": "this is crash course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index" 
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Dishant Patil <dishantpatil099@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
