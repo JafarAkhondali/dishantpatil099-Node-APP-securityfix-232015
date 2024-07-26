@@ -10,6 +10,11 @@ const path = require('path');
 
 
 const app = http.createServer((req , res) => {
+    if (path.normalize(decodeURI(req.url)) !== decodeURI(req.url)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
     // takes a function with parameter request and response
     // res.end("<h1>Hello on SERVER</h1>");
     // node mon restarts server as it is added as script
